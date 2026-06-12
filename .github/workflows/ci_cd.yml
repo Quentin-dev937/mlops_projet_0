@@ -16,11 +16,11 @@ jobs:
     steps:
       # 1. Récupérer le code du repository
       - name: Get Python Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       
       # 2. Installer Python (version 3.11 stable pour la compatibilité)
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       
@@ -44,11 +44,11 @@ jobs:
     steps:
       # 1. Récupérer le code
       - name: Get Python Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       
       # 2. Installer Python
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       
