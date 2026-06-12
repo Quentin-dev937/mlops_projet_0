@@ -62,7 +62,7 @@ jobs:
       
       # 5. Sauvegarder le modèle en tant qu'Artifact (Livraison)
       - name: Upload Model Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: deployed-model  # Nom du fichier téléchargeable
           path: models/model.skops # Chemin du fichier généré
