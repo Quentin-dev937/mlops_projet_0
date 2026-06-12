@@ -59,6 +59,8 @@ jobs:
       # 4. Lancer l'entraînement (Production du modèle)
       - name: Train Model
         run: python src/models/train.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
       
       # 5. Sauvegarder le modèle en tant qu'Artifact (Livraison)
       - name: Upload Model Artifact
